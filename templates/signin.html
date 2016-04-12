@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BlueGarden Project</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+    
+  </head>
+ 
+  <body background = "static/signin.jpg"> 
+ 
+    <div class="container">
+       <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/">Home</a></li>
+            <li role="presentation" class="active"><a href="#">Sign In</a></li>
+            <li role="presentation" ><a href="/showSignUp">Sign Up</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted"><font color="white">BlueGarden</font></h3>
+      </div>
+      <div class="jumbotron">
+        <h1>BlueGarden</h1>
+        <form class="form-signin" action="/validateLogin" method="post">
+        <label for="InputUsername" class="sr-only">Username</label>
+        <input type="text" name="InputUsername" id="InputUsername" class="form-control" placeholder="Username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+        <button id="btnSignIn" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+      </div>
+ 
+       
+ 
+      <footer class="footer">
+        <p><font color="white">&copy;</font> <font color="white">The university of Sydney 2016</font></p>
+      </footer>
+ 
+    </div>
+  </body>
+</html>
